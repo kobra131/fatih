@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6DB0C8AF-FD43-44ED-8A3F-A04B12E623BD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>KutuphaneOtomasyonu</RootNamespace>
+    <AssemblyName>KutuphaneOtomasyonu</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>integration_32_ico.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v13.2, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v13.2.Core, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v13.2, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v13.2, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v13.2, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v13.2, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v13.2, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\KitapController.cs" />
+    <Compile Include="Controllers\OgrenciController.cs" />
+    <Compile Include="Helpers\DBHelper.cs" />
+    <Compile Include="Helpers\Extensions.cs" />
+    <Compile Include="Helpers\FormHelper.cs" />
+    <Compile Include="Helpers\MessageHelper.cs" />
+    <Compile Include="KutuphaneOtomasyonDbDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KutuphaneOtomasyonDbDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BolumViewModel.cs" />
+    <Compile Include="Models\FakulteBolumViewModel.cs" />
+    <Compile Include="Models\FakulteViewModel.cs" />
+    <Compile Include="Models\GirisViewModel.cs" />
+    <Compile Include="Models\KitapOduncVermeViewModel.cs" />
+    <Compile Include="Models\KitapViewModel.cs" />
+    <Compile Include="Models\OgrenciViewModel.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\frmBolumEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmBolumEkle.Designer.cs">
+      <DependentUpon>frmBolumEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\frmFakulteEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmFakulteEkle.Designer.cs">
+      <DependentUpon>frmFakulteEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\frmKitapEkleDuzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmKitapEkleDuzenle.Designer.cs">
+      <DependentUpon>frmKitapEkleDuzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\frmKitapListesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmKitapListesi.Designer.cs">
+      <DependentUpon>frmKitapListesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\frmKitapOdunc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmKitapOdunc.Designer.cs">
+      <DependentUpon>frmKitapOdunc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\frmOduncAlmaListesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmOduncAlmaListesi.Designer.cs">
+      <DependentUpon>frmOduncAlmaListesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\frmOgrenciEkleDuzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmOgrenciEkleDuzenle.Designer.cs">
+      <DependentUpon>frmOgrenciEkleDuzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\frmOgrenciListesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmOgrenciListesi.Designer.cs">
+      <DependentUpon>frmOgrenciListesi.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Views\frmBolumEkle.resx">
+      <DependentUpon>frmBolumEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmFakulteEkle.resx">
+      <DependentUpon>frmFakulteEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmKitapEkleDuzenle.resx">
+      <DependentUpon>frmKitapEkleDuzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmKitapListesi.resx">
+      <DependentUpon>frmKitapListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmKitapOdunc.resx">
+      <DependentUpon>frmKitapOdunc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmOduncAlmaListesi.resx">
+      <DependentUpon>frmOduncAlmaListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmOgrenciEkleDuzenle.resx">
+      <DependentUpon>frmOgrenciEkleDuzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmOgrenciListesi.resx">
+      <DependentUpon>frmOgrenciListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="KutuphaneOtomasyonDbDataSet.xsc">
+      <DependentUpon>KutuphaneOtomasyonDbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="KutuphaneOtomasyonDbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KutuphaneOtomasyonDbDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KutuphaneOtomasyonDbDataSet.xss">
+      <DependentUpon>KutuphaneOtomasyonDbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="integration_32_ico.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

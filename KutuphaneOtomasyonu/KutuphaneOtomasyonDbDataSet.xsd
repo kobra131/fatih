@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="KutuphaneOtomasyonDbDataSet" targetNamespace="http://tempuri.org/KutuphaneOtomasyonDbDataSet.xsd" xmlns:mstns="http://tempuri.org/KutuphaneOtomasyonDbDataSet.xsd" xmlns="http://tempuri.org/KutuphaneOtomasyonDbDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="KutuphaneOtomasyonDbConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="KutuphaneOtomasyonDbConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.KutuphaneOtomasyonu.Properties.Settings.GlobalReference.Default.KutuphaneOtomasyonDbConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="KitapOduncVermeViewTableAdapter" GeneratorDataComponentClassName="KitapOduncVermeViewTableAdapter" Name="KitapOduncVermeView" UserDataComponentName="KitapOduncVermeViewTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="KutuphaneOtomasyonDbConnectionString (Settings)" DbObjectName="KutuphaneOtomasyonDb.dbo.KitapOduncVermeView" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Adi, Soyadi, FakulteAdi, BolumAdi, CepTelefonu, KitapKodu, KitapAdi, ISBNNumarasi, OduncVermeTarihi, TeslimAlindi, TeslimAlinmaTarihi FROM dbo.KitapOduncVermeView</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Adi" DataSetColumn="Adi" />
+              <Mapping SourceColumn="Soyadi" DataSetColumn="Soyadi" />
+              <Mapping SourceColumn="FakulteAdi" DataSetColumn="FakulteAdi" />
+              <Mapping SourceColumn="BolumAdi" DataSetColumn="BolumAdi" />
+              <Mapping SourceColumn="CepTelefonu" DataSetColumn="CepTelefonu" />
+              <Mapping SourceColumn="KitapKodu" DataSetColumn="KitapKodu" />
+              <Mapping SourceColumn="KitapAdi" DataSetColumn="KitapAdi" />
+              <Mapping SourceColumn="ISBNNumarasi" DataSetColumn="ISBNNumarasi" />
+              <Mapping SourceColumn="OduncVermeTarihi" DataSetColumn="OduncVermeTarihi" />
+              <Mapping SourceColumn="TeslimAlindi" DataSetColumn="TeslimAlindi" />
+              <Mapping SourceColumn="TeslimAlinmaTarihi" DataSetColumn="TeslimAlinmaTarihi" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="KutuphaneOtomasyonDbDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="KutuphaneOtomasyonDbDataSet" msprop:Generator_UserDSName="KutuphaneOtomasyonDbDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="KitapOduncVermeView" msprop:Generator_TableClassName="KitapOduncVermeViewDataTable" msprop:Generator_TableVarName="tableKitapOduncVermeView" msprop:Generator_TablePropName="KitapOduncVermeView" msprop:Generator_RowDeletingName="KitapOduncVermeViewRowDeleting" msprop:Generator_RowChangingName="KitapOduncVermeViewRowChanging" msprop:Generator_RowEvHandlerName="KitapOduncVermeViewRowChangeEventHandler" msprop:Generator_RowDeletedName="KitapOduncVermeViewRowDeleted" msprop:Generator_UserTableName="KitapOduncVermeView" msprop:Generator_RowChangedName="KitapOduncVermeViewRowChanged" msprop:Generator_RowEvArgName="KitapOduncVermeViewRowChangeEvent" msprop:Generator_RowClassName="KitapOduncVermeViewRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Adi" msprop:Generator_ColumnVarNameInTable="columnAdi" msprop:Generator_ColumnPropNameInRow="Adi" msprop:Generator_ColumnPropNameInTable="AdiColumn" msprop:Generator_UserColumnName="Adi">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Soyadi" msprop:Generator_ColumnVarNameInTable="columnSoyadi" msprop:Generator_ColumnPropNameInRow="Soyadi" msprop:Generator_ColumnPropNameInTable="SoyadiColumn" msprop:Generator_UserColumnName="Soyadi">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FakulteAdi" msprop:Generator_ColumnVarNameInTable="columnFakulteAdi" msprop:Generator_ColumnPropNameInRow="FakulteAdi" msprop:Generator_ColumnPropNameInTable="FakulteAdiColumn" msprop:Generator_UserColumnName="FakulteAdi">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BolumAdi" msprop:Generator_ColumnVarNameInTable="columnBolumAdi" msprop:Generator_ColumnPropNameInRow="BolumAdi" msprop:Generator_ColumnPropNameInTable="BolumAdiColumn" msprop:Generator_UserColumnName="BolumAdi">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CepTelefonu" msprop:Generator_ColumnVarNameInTable="columnCepTelefonu" msprop:Generator_ColumnPropNameInRow="CepTelefonu" msprop:Generator_ColumnPropNameInTable="CepTelefonuColumn" msprop:Generator_UserColumnName="CepTelefonu">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="KitapKodu" msprop:Generator_ColumnVarNameInTable="columnKitapKodu" msprop:Generator_ColumnPropNameInRow="KitapKodu" msprop:Generator_ColumnPropNameInTable="KitapKoduColumn" msprop:Generator_UserColumnName="KitapKodu" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="KitapAdi" msprop:Generator_ColumnVarNameInTable="columnKitapAdi" msprop:Generator_ColumnPropNameInRow="KitapAdi" msprop:Generator_ColumnPropNameInTable="KitapAdiColumn" msprop:Generator_UserColumnName="KitapAdi" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ISBNNumarasi" msprop:Generator_ColumnVarNameInTable="columnISBNNumarasi" msprop:Generator_ColumnPropNameInRow="ISBNNumarasi" msprop:Generator_ColumnPropNameInTable="ISBNNumarasiColumn" msprop:Generator_UserColumnName="ISBNNumarasi" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="OduncVermeTarihi" msprop:Generator_ColumnVarNameInTable="columnOduncVermeTarihi" msprop:Generator_ColumnPropNameInRow="OduncVermeTarihi" msprop:Generator_ColumnPropNameInTable="OduncVermeTarihiColumn" msprop:Generator_UserColumnName="OduncVermeTarihi" type="xs:dateTime" />
+              <xs:element name="TeslimAlindi" msprop:Generator_ColumnVarNameInTable="columnTeslimAlindi" msprop:Generator_ColumnPropNameInRow="TeslimAlindi" msprop:Generator_ColumnPropNameInTable="TeslimAlindiColumn" msprop:Generator_UserColumnName="TeslimAlindi" type="xs:boolean" />
+              <xs:element name="TeslimAlinmaTarihi" msprop:Generator_ColumnVarNameInTable="columnTeslimAlinmaTarihi" msprop:Generator_ColumnPropNameInRow="TeslimAlinmaTarihi" msprop:Generator_ColumnPropNameInTable="TeslimAlinmaTarihiColumn" msprop:Generator_UserColumnName="TeslimAlinmaTarihi" type="xs:dateTime" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
